@@ -51,8 +51,6 @@ app.use(sass.middleware({
 
 app.get("/", routes.index);
 
-app.get("/users", user.list);
-
 app.post("/tld", tld.post);
 
 app.get("/tld", tld.show);

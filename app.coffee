@@ -31,7 +31,7 @@ app.use sass.middleware {
   debug: true
 }
 app.get "/", routes.index
-app.get "/users", user.list
+# app.get "/users", user.list
 app.post "/tld", tld.post
 app.get "/tld", tld.show
 app.post "/tld.json", tld.ajax
