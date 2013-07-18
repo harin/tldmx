@@ -1,0 +1,28 @@
+extends layout
+
+block content
+
+  div.sidebar
+    if tlds.length > 0
+      h3 Available TLD
+      ul
+      each tld in tlds
+        li.tldList .#{tld}
+
+  div.container
+    h1 TLDmx
+    div.form
+      form#phraseFrom(action='/tld', method='post')
+        label Phrase
+        input.textInput(type='text', name='phrase')
+        input.submit(type='submit')
+
+    h2 Results
+    ul.domainList
+    if results
+      each result in results
+        li.domainListItem #{result}
+      if results.length == 0
+        p#noResult Your phrase does not contain any TLD :( it seems to have to use those lame .com
+
+    

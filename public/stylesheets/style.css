@@ -1,0 +1,89 @@
+body {
+  padding: 0 50px 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container{
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+#noResult{
+  padding: 20px 0 20px 50px
+}
+li.domainListItem {
+  padding: 20px 0 20px 50px;
+  display: block;
+  list-style-type: none;
+  color: rgb(255, 109, 73);
+  border-bottom: 1px solid rgb(250, 237, 237);
+}
+
+li.domainListItem:hover {
+  background-color: #F7F0F0;
+  color: #FF0000;
+}
+
+
+h1{
+  font-size: 5em;
+  color: #E46969;
+}
+
+h2{
+  color: rgba(34, 66, 61, 0.93);
+  padding-left: 50px;
+}
+
+.form{
+/*  position: fixed;
+  bottom: 50px;*/
+  padding: 0px 0 20px 0;
+  background-color: rgba(255,255,255,0.9);
+
+}
+
+label{
+  padding: 0 10px 0 50px;
+  color: #3F3B3B;
+}
+input.textInput{
+  width: 200px;
+  margin: 0 10px 0 10px;
+}
+
+input.submit{
+}
+
+
+.sidebar{
+  background-color: rgba(247, 247, 247, 0.8);
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar h3{
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.20);
+}
+.sidebar ul{
+  padding-left: 50px;
+}
+.sidebar li.tldList{
+  list-style-type: none;
+  padding: 10px 0 10px 0;
+  font-size: 2em;
+  padding-left: 50px;
+}
